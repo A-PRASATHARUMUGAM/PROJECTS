@@ -9,28 +9,59 @@
 <body>
 
 <div class="main-container">
-                <h1>Schooltrip</h1>
-
-<div class="form-container">
-
-    <form action="dashboard.html" class="form-main-container">
-          
-
-        <button type="submit">Continue with Google </button>
-        <button type="submit">Continue with Email </button>
 
 
-    </form>
+        <!-- Auth Form Section Container -->
+        <div class="auth-form">
+      
+          <!-- Title Section -->
+          <div class="auth-header">
+            <h1 class="auth-title">Schooltrip</h1>
+            <p class="auth-subtitle">Helping educators plan and manage educational trips</p>
+          </div>
+      
+          <!-- Form Start -->
+          <form action="dashboard.html" class="auth-options">
+      
+            <!-- Login with Google -->
+            <div class="auth-option">
+              <button type="submit" class="auth-button google-btn">Continue with Google</button>
+            </div>
+      
+            <!-- Login with Email -->
+            <div class="auth-option">
+              <button type="submit" class="auth-button email-btn">Continue with Email</button>
+            </div>
+      
+            <!-- Login with School/College ID -->
+            <div class="auth-option">
+              <a href="#" class="auth-link school-id-link">Continue with School/College ID</a>
+            </div>
+      
+          </form>
+      
+          <!-- Terms and Privacy Info -->
+          <div class="auth-terms">
+
+            <p>
+                By continuing, you agree to the 
+                <a href="#">Terms of Use</a> and 
+                <a href="#">Privacy Policy</a>.
+            </p>
+
+          </div>
+                
+          <!-- Guest Access Button -->
+          <div class="auth-guest">
+            <button class="auth-button guest-btn">I'm a guest</button>
+          </div>
+      
+        </div>
 
 
-</div>
-
-
-</div>
-
-
-
-
+    
+    </div>
+      
 
     <script src="../Travel_Project/assets/js/index.js"></script>
 </body>
