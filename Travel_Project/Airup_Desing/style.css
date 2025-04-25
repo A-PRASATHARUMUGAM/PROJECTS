@@ -1,1 +1,23 @@
-s
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+a{
+    text-decoration: none;
+}
+::after,
+::before{
+   box-sizing: border-box;
+}
+
+body{
+    background-color: #24252a;
+
+}
+
+.hero-section{
+    border:1px solid lightgray;
+    height: 100vh;
+}
