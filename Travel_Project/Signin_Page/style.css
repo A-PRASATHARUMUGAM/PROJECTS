@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: cursive;
 }
 
 ::after,
@@ -20,30 +21,37 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* background-image: url(img/img2.jpg); */
+    background-image: url(img/img4.jpg);
     background-color: #2B82E8;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 .hero-section{
     /* border: 1px solid red; */
+    position: absolute;
+    right:1300px;
     border-radius: 60px;
     display: flex;
     justify-content: space-evenly;
     padding: 25px ;
     column-gap: 20px;
-    background-color: rgba(255, 255, 255, 0.500);
-    backdrop-filter: blur(10px);
-    width: 90vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    width: 90vw; 
     height: 90vh;
 }
-
+.hero-section.active{
+    transition: 1s ease-in-out; 
+    right:60px;  
+}
 
 .sign-page-container{
+    color: white;
     text-align: center;
-    font-size: 3rem;
+    font-size:3rem;
     padding:10px;
     width: 60%;
+
 }
 .img-slider-container{
     /* border: 1px solid blue;*/
@@ -53,4 +61,31 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.btn-container{
+    /* border: 1px solid white; */
+    height:70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.auth-button{
+    padding:12px;
+    font-size: 1.2rem;
+    border: none;
+    width:250px;
+    border-radius: 50px;
+    
+}
+.continue-btn{
+    background-color: orange;
+}
+
+.sign-btn{
+    color: white;
+  background-color: black;
 }
