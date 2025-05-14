@@ -23,9 +23,9 @@ p{
     padding:10px;
     border-radius:15px;
     overflow: hidden;
-   
 
 }
+
 p:nth-child(even){
     background-color:blueviolet;
 }
@@ -35,15 +35,17 @@ p:nth-child(odd){
 
 
 .container{
-    display:grid;
+    display:grid; 
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-columns: repeat(3,1fr);
     grid-template-columns:repeat(auto-fit,minmax(200px,300px));
-    justify-content:space-evenly;
-   transition: all 0.2s;
+    grid-template-rows: repeat(2,100px 200px);
+    grid-auto-rows:300px;   
+    justify-content:space-evenly; 
+    transition: all 0.2s;  
 }
 
 p:hover{
     background-color: rgba(255, 255, 255, 0.354);
-    transition: all 0.2s;
+    transition:all 0.5s;
 }
