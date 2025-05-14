@@ -9,12 +9,13 @@ color: white;
 line-height:2;
 
 }
-.container{
+.container, .container2{
     margin: 20px;
     border:1px solid yellow;
     padding: 10px;
-    transition: all 0.4s;
 }
+
+
 
 p{
     margin:6px;
@@ -26,15 +27,22 @@ p{
     text-align: center;
 
 }
+.container2 p{
+    font-size:20px;
 
+}
 p:nth-child(even){
     background-color:blueviolet;
 }
 p:nth-child(odd){
     background-color: yellowgreen;
 }
+.container2 p:nth-child(odd){
+    background-color: orange;
+
+}
 p:hover{
-    background-color: rgba(255, 255, 255, 0.354);
+    background-color: rgba(255, 255, 255, 0.03) !important;
     transition:all 0.5s;
 }
 
@@ -44,11 +52,23 @@ p:hover{
     display:grid; 
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-columns: repeat(3,1fr);
-    grid-template-columns:repeat(auto-fit,minmax(200px,500px));
-    grid-template-rows: 100px 200px;
-    grid-auto-flow: column;
-    grid-auto-rows:500px;   
+    grid-template-columns:repeat(auto-fit,minmax(200px,300px));
     justify-content:space-evenly; 
     transition: all 0.2s;  
 }
+
+.container2{
+    display:grid; 
+    grid-template-columns:repeat(auto-fit,minmax(200px,300px));
+    grid-template-rows: repeat(2,100px);
+    grid-auto-rows: 200px; 
+    justify-content:space-evenly;  
+}
+
+
+/* 
+Check the problems  - First 4 rows getting the size. Actual is 2 row getting size 
+    grid-template-rows: repeat(2,100px 200px);
+    gird-auto-rows:500px;
+*/
 
