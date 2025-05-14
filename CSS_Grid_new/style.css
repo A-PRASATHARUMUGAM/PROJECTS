@@ -23,6 +23,7 @@ p{
     padding:10px;
     border-radius:15px;
     overflow: hidden;
+    text-align: center;
 
 }
 
@@ -47,7 +48,6 @@ p:hover{
     grid-template-rows: 100px 200px;
     grid-auto-flow: column;
     grid-auto-rows:500px;   
-    
     justify-content:space-evenly; 
     transition: all 0.2s;  
 }
