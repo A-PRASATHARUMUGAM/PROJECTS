@@ -12,5 +12,5 @@ function typeWriter() {
     document.getElementById("typing-text").style.borderRight = "none";
   }
 }
-
+ 
 window.onload = typeWriter;
